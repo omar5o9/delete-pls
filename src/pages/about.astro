@@ -1,0 +1,17 @@
+---
+
+import '../styles/myStyles.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "About";
+const professions = ["Web Developer", "Programmer", "Tech Enthusiast"];
+
+---
+
+<BaseLayout pageTitle={pageTitle}> 
+	<h1>{pageTitle}</h1>
+    <ul>
+        {professions.map((profession) => (
+            <li>{profession}</li>
+        ))} 
+    </ul>
+</BaseLayout>
